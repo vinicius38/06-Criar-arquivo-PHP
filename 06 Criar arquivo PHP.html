@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intodução ao PHP</title>
+</head>
+<body>
+  <h1>Intodução ao PHP</h1>
+  <?php
+$dados = [
+   ['Aluno 1', 'Materia 1'],
+   ['Aluno 2', 'Materia 1'],
+   ['Aluno 3', 'Materia 3'],
+   ['Aluno 4', 'Materia 3'],
+   ['Aluno 5', 'Materia 2']
+];
+  echo "Tabela";
+  	echo "<ul>";
+  	foreach($dados as $materia => $nome){
+      echo "<li>$nome[0] | $nome[1]</li>";
+    }
+  	echo "</ul>";
+?>
+  </body>
+</html>
